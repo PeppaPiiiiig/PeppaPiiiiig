@@ -1,0 +1,47 @@
+.leftArea{float: left;}
+.rightArea{float: right;}
+
+
+body{
+    background-image: url("images/bg1.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+/*head*/
+.head{
+    width:auto;
+    position: relative;
+}
+.head a{
+    text-decoration: none;
+    color: white;
+}
+.head a:hover{ color: black;}
+/*navigation*/
+.navigation{
+    padding-top: 20%;
+}
+.navigation li{
+    list-style: none;
+    padding-top: 5%;
+    font-size: large;
+    font-weight: bold;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+.navigation a:hover{ color: black;}
+
+/*footer*/
+.footer{
+    position: fixed;
+    bottom:0;
+    text-align: center;
+    padding-left: 30%;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
