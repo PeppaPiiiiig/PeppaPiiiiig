@@ -6,6 +6,7 @@ body{
     background-image: url("images/bg1.jpg");
     background-size: 100% ;
     background-repeat: no-repeat;
+    background-attachment:fixed;
 }
 
 /*head*/
@@ -18,11 +19,13 @@ body{
     color: white;
 }
 .head a:hover{ color: black;}
+
 /*navigation*/
 .navigation{
     padding-top: 20%;
 }
 .navigation li{
+    display: ;
     list-style: none;
     padding-top: 5%;
     font-size: large;
@@ -36,12 +39,23 @@ body{
 
 /*footer*/
 .footer{
-    position: fixed;
+    position: absolute;
     bottom:0;
     text-align: center;
     padding-left: 30%;
 }
 .footer a{
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footer a:hover{
     color: white;
+}
+
+
+/*index*/
+.title{
+    text-align: center;
+    padding-top: 20%;
 }
