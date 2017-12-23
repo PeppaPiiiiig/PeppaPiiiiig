@@ -87,3 +87,17 @@ body{
     margin: auto;
     color: black;
 }
+
+/*log in*/
+.mainPart_login{
+    padding-top: 12%;
+    padding-left: 35%;
+    height: 72%;
+}
+.mainPart_login h2{
+    color: white;
+    padding-left: 15%;
+}
+.mainPart_login form{
+    color: white;
+}
