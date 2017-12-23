@@ -1,14 +1,20 @@
 .leftArea{float: left;}
 .rightArea{float: right;}
 
-
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;   /*必须*/
+}
 body{
     background-image: url("images/bg1.jpg");
     background-size: 100% ;
     background-repeat: no-repeat;
     background-attachment:fixed;
 }
+.content{
 
+}
 /*head*/
 .head{
     width:auto;
@@ -44,6 +50,7 @@ body{
     position: relative;
     bottom:0;
     text-align: center;
+    height: 13%;
 }
 .footer a{
     text-decoration: none;
@@ -51,7 +58,7 @@ body{
     font-weight: bold;
 }
 .footer a:hover{
-    color: white;
+    color: red;
 }
 
 
@@ -80,7 +87,7 @@ body{
     bottom:0;
     padding-left: 25%;
 }
-.content table{
+.content_table table{
     padding-top: 3%;
     padding-bottom: 3%;
     width: 90%;
@@ -92,7 +99,8 @@ body{
 .mainPart_login{
     padding-top: 12%;
     padding-left: 35%;
-    height: 72%;
+    height: auto;
+    padding-bottom: 13%;
 }
 .mainPart_login h2{
     color: white;
