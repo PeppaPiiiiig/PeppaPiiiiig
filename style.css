@@ -106,6 +106,24 @@ body{
     color: white;
     padding-left: 15%;
 }
+.mainPart_login a{
+    color: white;
+    text-decoration: none;
+}
+.mainPart_login a:hover{
+    color: black;
+}
 .mainPart_login form{
     color: white;
+}
+.name_text{
+    margin-left: 3.5%;
+}
+.sub_btm{
+    margin-left: 15%;
+    margin-top: 3%;
+    width: 10%;
+}
+.sub_btm:hover{
+    cursor: pointer;
 }
