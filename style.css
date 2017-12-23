@@ -64,7 +64,23 @@ body{
 /*food*/
 .mainPart_food{
     width:70%;
-    height: 500px;
     margin-left: 18%;
+    height: auto;
+    background-color: rgba(255,0,0,0.3);
+}
+.foodTitle{
+    background-color: indianred;
+    height: 20%;
+    font-size: larger;
+    position: relative;
+}
+.foodTitle h1{
+    position:absolute;
+    bottom:0;
+
+    padding-left: 25%;
+}
+.content table{
+    width: 80%;
     background-color: white;
 }
