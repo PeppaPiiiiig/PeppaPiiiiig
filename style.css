@@ -12,6 +12,7 @@ body{
 /*head*/
 .head{
     width:auto;
+    position: relative;
     height: 8%;
 }
 .head a{
