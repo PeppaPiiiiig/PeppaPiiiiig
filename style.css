@@ -95,25 +95,25 @@ body{
     color: black;
 }
 
-/*log in*/
-.mainPart_login{
-    padding-top: 12%;
+/*log in&register*/
+.mainPart_else{
+    padding-top: 10%;
     padding-left: 35%;
     height: auto;
     padding-bottom: 13%;
 }
-.mainPart_login h2{
+.mainPart_else h2{
     color: white;
-    padding-left: 15%;
+    padding-left: 13%;
 }
-.mainPart_login a{
+.mainPart_else a{
     color: white;
     text-decoration: none;
 }
-.mainPart_login a:hover{
+.mainPart_else a:hover{
     color: black;
 }
-.mainPart_login form{
+.mainPart_else form{
     color: white;
 }
 .name_text{
@@ -126,4 +126,11 @@ body{
 }
 .sub_btm:hover{
     cursor: pointer;
+}
+
+.text_age{
+    margin-left: 4.7%;
+}
+.text_email{
+    margin-left: 2.8%;
 }
