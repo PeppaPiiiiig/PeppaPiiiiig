@@ -134,3 +134,30 @@ body{
 .text_email{
     margin-left: 2.8%;
 }
+
+/*contact*/
+.mainPart_contact{
+    padding-top: 10%;
+    padding-left: 30%;
+    height: auto;
+    padding-bottom: 13%;
+}
+.mainPart_contact h2{
+    color: white;
+    padding-left: 23%;
+}
+.mainPart_contact p{
+    width:60%;
+    color: white;
+}
+.contact_text{
+    border: solid 1px gray;
+    padding: 0.5% 0.5%;
+    width: 50%;
+    margin-left: 3%;
+    height:100px;
+}
+.sub_btm_contact{
+    margin-left: 24%;
+    margin-top: 2%;
+}
