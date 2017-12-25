@@ -19,7 +19,7 @@ body{
 .head{
     width:auto;
     position: relative;
-    height: 8%;
+    height: 6%;
 }
 .head a{
     text-decoration: none;
@@ -50,7 +50,7 @@ body{
     position: relative;
     bottom:0;
     text-align: center;
-    height: 13%;
+    height: 9%;
 }
 .footer a{
     text-decoration: none;
@@ -58,9 +58,8 @@ body{
     font-weight: bold;
 }
 .footer a:hover{
-    color: red;
+    text-decoration: underline;
 }
-
 
 /*index*/
 .title{
@@ -95,25 +94,25 @@ body{
     color: black;
 }
 
-/*log in&register*/
-.mainPart_else{
-    padding-top: 10%;
+/*log in*/
+.mainPart_login{
+    padding-top: 13%;
     padding-left: 35%;
     height: auto;
-    padding-bottom: 13%;
+    padding-bottom: 9%;
 }
-.mainPart_else h2{
+.mainPart_login h2{
     color: white;
     padding-left: 13%;
 }
-.mainPart_else a{
+.mainPart_login a{
     color: white;
     text-decoration: none;
 }
-.mainPart_else a:hover{
+.mainPart_login a:hover{
     color: black;
 }
-.mainPart_else form{
+.mainPart_login form{
     color: white;
 }
 .name_text{
@@ -128,19 +127,40 @@ body{
     cursor: pointer;
 }
 
+
+/*register*/
+.mainPart_re{
+    padding-top: 8%;
+    padding-left: 35%;
+    height: auto;
+    padding-bottom: 9%;
+}
+.mainPart_re h2{
+    color: white;
+    padding-left: 13%;
+}
+.mainPart_re a{
+    color: white;
+    text-decoration: none;
+}
+.mainPart_re a:hover{
+    color: black;
+}
+.mainPart_re form{
+    color: white;
+}
 .text_age{
     margin-left: 4.7%;
 }
 .text_email{
     margin-left: 2.8%;
 }
-
 /*contact*/
 .mainPart_contact{
-    padding-top: 10%;
+    padding-top: 3%;
     padding-left: 30%;
     height: auto;
-    padding-bottom: 13%;
+    padding-bottom: 9%;
 }
 .mainPart_contact h2{
     color: white;
@@ -160,4 +180,7 @@ body{
 .sub_btm_contact{
     margin-left: 24%;
     margin-top: 2%;
+}
+.sub_btm_contact:hover{
+    cursor: pointer;
 }
