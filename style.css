@@ -64,8 +64,10 @@ body{
 /*index*/
 .title{
     padding-left: 20%;
-    padding-top: 16%;
+    padding-top: 7.5%;
+    height: auto;
     font-size: 50px;
+    padding-bottom: 9%;
 }
 
 /*food*/
