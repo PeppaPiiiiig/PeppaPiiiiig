@@ -3,10 +3,6 @@
 <title>Demo of Image KeyInput Image Movement JavaScript</title>
 
 <!--
-Web Authoring and Design
-ZJNU 2017
-https://zjnu2017.github.io/WAD/
-
 Demonstrate:
 1. user input (e.g., keys)
 2. reset/start game
@@ -14,7 +10,14 @@ Demonstrate:
 4. todo - game mechanics (score/gameover/playtesting, ..)
 
 -->
-
+<style type="text/css">
+body{
+background-image:url(../pigsnow.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-attachment:fixed;
+}
+</style>
 <noscript>
 	Warning - JavaScript is Disabled.
 	
@@ -47,7 +50,7 @@ function Timer() // update loop for game
 	if ( yvel < -100 ) yvel = -100;
 	if ( y    >  200  ) y    = 200;
 	xs = xs + 1;
-	if ( xs   > 700 ) xs = -100;
+	if ( xs   > 500 ) xs = -200;
 	if ( x < 0   ) x = 0;
 	if ( x > 600 ) x = 600;
 	
@@ -59,13 +62,13 @@ function Timer() // update loop for game
 	document.getElementById('i1').style.top= y + "px"; // vertical movment
 	document.getElementById('i1').style.left= x + "px"; // horizontal movment
 	document.getElementById('i2').style.left= xs + "px"; // horizontal movment
-	document.getElementById("msg").innerHTML="stanta"+xs;//SantaÍ¼Æ¬Î»ÖÃ
+	document.getElementById("msg").innerHTML="stanta"+xs;//Santaå›¾ç‰‡ä½ç½®
 	document.getElementById("mg").innerHTML="stanta"+x;
 	
-	myTime=setTimeout('Timer()',10);//100msÍ¼Æ¬ÒÆ¶¯ËÙ¶È
+	myTime=setTimeout('Timer()',10);//100mså›¾ç‰‡ç§»åŠ¨é€Ÿåº¦
 	
 	
-	if (Math.abs((x+50)-(xs+50))<100&&Math.abs((y+50)-(ys+50))<100)
+	if (Math.abs(((x+y)/2.0)-xs)<10&&Math.abs(((y+x)/2.0)-ys)<10)
 	{
 	   Gameover();
 	   return;
@@ -86,7 +89,7 @@ function KeyDown(e)
   if (e.keyCode == 38 && yvel<-70 ) {  yvel = 70;   } // up key
 }
 
-function  Reset1()//ÖØÖÃ
+function  Reset1()//é‡ç½®
 {
  //   alert("starting game");
 	
@@ -105,7 +108,7 @@ time=0
 	document.getElementById('i1').style.top= "200px";
 	
 	document.getElementById('i2').style.left= "-200px";
-	document.getElementById('i2').style.top= "200px";
+	document.getElementById('i2').style.top= "300px";
 	
 		document.getElementById('i3').style.left= "-300px";
 	document.getElementById('i3').style.top= "200px";
@@ -115,7 +118,7 @@ time=0
 	// Add an event listener to the keypress event.
 	document.addEventListener("keydown", KeyDown,false);
 
-//myTime=setTimeout('Timer()',10);//100msÍ¼Æ¬ÒÆ¶¯ËÙ¶È
+//myTime=setTimeout('Timer()',10);//100mså›¾ç‰‡ç§»åŠ¨é€Ÿåº¦
 	
 	Timer()	;
 }
@@ -125,13 +128,13 @@ time=0
 </head>
 <body >
     <div id='mg'></div>
-	<img width="100" height="100" src="1.jpg" id='i1' style="position:absolute; left: 500; top: 200;">
+	<img width=300px height=300px src="../pigsnow.png" id='i1' style="position:absolute; left: 500; top:200; ">
 	<input type=button onClick=Reset1()  value='Start'></br>
 	Press left and right keys for movement and up key for jump
     <div id='msg'></div>
-	<img width="100"  height="100" src="timg.jpg" id='i2' style="position:absolute; left: -200; top: 200;">
+	<img src="../snow.png" id='i2' style="position:absolute; left: -200; top:200;">
 	<form name="form1" id="form1">
-  <label>·ÖÊı£º</label>
+  <label>åˆ†æ•°ï¼š</label>
   <input type="text" name="time" size="5"></form>
 	<img width="300"  height="400" src="th.jpg" id='i3' style="position:absolute; left: -300; top: 200;">
 
