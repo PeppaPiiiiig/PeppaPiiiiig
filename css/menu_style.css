@@ -9,11 +9,20 @@ html,body{
 body{
     background-image: url("../images/family.jpg");
     background-size: 100% ;
-
     background-repeat: no-repeat;
     background-attachment:fixed;
 }
 
+.title{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 6%;
+    font-size: 40px;
+}
+.title span{
+    color: indianred;
+    font-size: 100px;
+}
 .peppaFriend img{
     margin-top: 28.4%;
     margin-left: 73.8%;
@@ -56,7 +65,7 @@ body{
 .mommy img:hover{
     cursor: pointer;
     width: 28%;
-    left: -1%;
+    left: +1%;
 }
 .daddy img{
     margin-top: 10.4%;
