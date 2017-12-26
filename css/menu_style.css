@@ -32,7 +32,7 @@ body{
 .peppaFriend img:hover{
     cursor: pointer;
     width: 25.8%;
-    left: -1%;
+    left: -0.5%;
 }
 .georgeSus img{
     margin-top: 29.7%;
@@ -43,7 +43,7 @@ body{
 .georgeSus img:hover{
     cursor: pointer;
     width: 16.3%;
-    left: -1%;
+    left: -0.5%;
 }
 .peppa img{
     margin-top: 27.4%;
@@ -54,7 +54,7 @@ body{
 .peppa img:hover{
     cursor: pointer;
     width: 12%;
-    left: -1%;
+    left: -0.5%;
 }
 .mommy img{
     margin-top: 18.5%;
@@ -65,7 +65,7 @@ body{
 .mommy img:hover{
     cursor: pointer;
     width: 27%;
-    left: +1%;
+    left: +0.5%;
 }
 .daddy img{
     margin-top: 10.4%;
@@ -75,6 +75,6 @@ body{
 }
 .daddy img:hover{
     cursor: pointer;
-    width: 22.1%;
-    left: -1%;
+    width: 22%;
+    left: -0.5%;
 }
