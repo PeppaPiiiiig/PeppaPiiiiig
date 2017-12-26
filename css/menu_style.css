@@ -1,0 +1,25 @@
+.leftArea{float: left;}
+.rightArea{float: right;}
+
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;   /*必须*/
+}
+body{
+    background-image: url("../images/family.jpg");
+    background-size: 100% ;
+
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.peppaFriend img{
+    margin-top: 27%;
+    margin-left: 72.5%;
+    width: 27%;
+}
+.peppaFriend img:hover{
+    border: black;
+    cursor: pointer;
+}
