@@ -16,7 +16,7 @@ body{
 .title{
     position: absolute;
     margin-left: 35%;
-    margin-top: 6%;
+    margin-top: 3%;
     font-size: 40px;
 }
 .title span{
@@ -68,7 +68,7 @@ body{
     left: +0.5%;
 }
 .daddy img{
-    margin-top: 10.4%;
+    margin-top: 10.5%;
     margin-left: 3.7%;
     width: 21.6%;
     position: absolute;
