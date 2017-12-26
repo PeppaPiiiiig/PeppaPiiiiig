@@ -15,11 +15,57 @@ body{
 }
 
 .peppaFriend img{
-    margin-top: 27%;
-    margin-left: 72.5%;
-    width: 27%;
+    margin-top: 28.4%;
+    margin-left: 73.8%;
+    width: 25.3%;
+    position: absolute;
 }
 .peppaFriend img:hover{
-    border: black;
     cursor: pointer;
+    width: 27%;
+    left: -1%;
+}
+.georgeSus img{
+    margin-top: 29.7%;
+    margin-left: 59.7%;
+    width: 15.9%;
+    position: absolute;
+}
+.georgeSus img:hover{
+    cursor: pointer;
+    width: 17.2%;
+    left: -1%;
+}
+.peppa img{
+    margin-top: 27.4%;
+    margin-left: 48.3%;
+    width: 11.3%;
+    position: absolute;
+}
+.peppa img:hover{
+    cursor: pointer;
+    width: 12.5%;
+    left: -1%;
+}
+.mommy img{
+    margin-top: 18.5%;
+    margin-left: 22.5%;
+    width: 26.5%;
+    position: absolute;
+}
+.mommy img:hover{
+    cursor: pointer;
+    width: 28%;
+    left: -1%;
+}
+.daddy img{
+    margin-top: 10.4%;
+    margin-left: 3.7%;
+    width: 21.6%;
+    position: absolute;
+}
+.daddy img:hover{
+    cursor: pointer;
+    width: 22.5%;
+    left: -1%;
 }
