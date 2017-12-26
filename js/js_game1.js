@@ -1,14 +1,13 @@
-<<<<<<< HEAD:js_game1.js
 // JavaScript Document
- var td = new Array(),  //±£´æÃ¿¸ö¸ñ×ÓµÄµØÊó
- playing = false,  //ÓÎÏ·ÊÇ·ñ¿ªÊ¼
- score = 0, //·ÖÊı
- beat = 0, //Êó±êµã»÷´ÎÊı
- knock = 0, //Êó±êµãÖĞÀÏÊóÍ¼Æ¬µÄ´ÎÊı
- countDown = 30, //µ¹¼ÆÊ±
- interId = null, //Ö¸¶¨ setInterval()µÄ±äÁ¿
- timeId = null; //Ö¸¶¨ setTimeout()µÄ±äÁ¿
- //ÓÎÏ·½áÊø
+ var td = new Array(),  //ä¿å­˜æ¯ä¸ªæ ¼å­çš„åœ°é¼ 
+ playing = false,  //æ¸¸æˆæ˜¯å¦å¼€å§‹
+ score = 0, //åˆ†æ•°
+ beat = 0, //é¼ æ ‡ç‚¹å‡»æ¬¡æ•°
+ knock = 0, //é¼ æ ‡ç‚¹ä¸­è€é¼ å›¾ç‰‡çš„æ¬¡æ•°
+ countDown = 30, //å€’è®¡æ—¶
+ interId = null, //æŒ‡å®š setInterval()çš„å˜é‡
+ timeId = null; //æŒ‡å®š setTimeout()çš„å˜é‡
+ //æ¸¸æˆç»“æŸ
  function GameOver(){
  timeStop();
  playing = false;
@@ -19,7 +18,7 @@
  beat = 0;
  countDown = 30;
  }
- //ÏÔÊ¾µ±Ç°µ¹¼ÆÊ±ËùÊ£Ê±¼ä
+ //æ˜¾ç¤ºå½“å‰å€’è®¡æ—¶æ‰€å‰©æ—¶é—´
  function timeShow(){
  document.form1.remtime.value = countDown;
  if(countDown == 0){
@@ -30,27 +29,27 @@
  timeId = setTimeout("timeShow()",1000);
  }
  }
- //Ö÷¶¯Í£Ö¹ËùÓĞ¼ÆÊ±
+ //ä¸»åŠ¨åœæ­¢æ‰€æœ‰è®¡æ—¶
  function timeStop() {
  clearInterval(interId);
  clearTimeout(timeId); 
  }
- //Ëæ»úÑ­»·ÏÔÊ¾ÀÏÊóÍ¼Æ¬
+ //éšæœºå¾ªç¯æ˜¾ç¤ºè€é¼ å›¾ç‰‡
  function show(){
  if(playing){
  var current = Math.floor(Math.random()*36);
  document.getElementById("td["+current+"]").innerHTML = '<img src="images/pigcry.png">';
- setTimeout("document.getElementById('td["+current+"]').innerHtml=''",1000); //Ê¹ÓÃ setTimeout()ÊµÏÖ3ÃëºóÒş²ØÀÏÊóÍ¼Æ¬
+ setTimeout("document.getElementById('td["+current+"]').innerHtml=''",1000); //ä½¿ç”¨ setTimeout()å®ç°3ç§’åéšè—è€é¼ å›¾ç‰‡
  
  }
  }
- //Çå³ıËùÓĞÀÏÊóÍ¼Æ¬
+ //æ¸…é™¤æ‰€æœ‰è€é¼ å›¾ç‰‡
  function clearMouse(){
  for(var i=0;i<36;i++){
  document.getElementById("td["+i+"]").innerHTML="";
  }
  }
- //µã»÷ÊÂ¼şº¯Êı£¬ÅĞ¶ÏÊÇ·ñµãÖĞÀÏÊó
+ //ç‚¹å‡»äº‹ä»¶å‡½æ•°ï¼Œåˆ¤æ–­æ˜¯å¦ç‚¹ä¸­è€é¼ 
  function hit(id){
  if(playing == false){
  alert("StartGame");
@@ -70,86 +69,10 @@
  }
  }
  }
- //ÓÎÏ·¿ªÊ¼
+ //æ¸¸æˆå¼€å§‹
  function GameStart(){
  playing = true;
  interId = setInterval("show()",1000); 
  document.form1.score.value = score;
  timeShow();
-=======
-// JavaScript Document
- var td = new Array(),  //±£´æÃ¿¸ö¸ñ×ÓµÄµØÊó
- playing = false,  //ÓÎÏ·ÊÇ·ñ¿ªÊ¼
- score = 0, //·ÖÊı
- beat = 0, //Êó±êµã»÷´ÎÊı
- knock = 0, //Êó±êµãÖĞÀÏÊóÍ¼Æ¬µÄ´ÎÊı
- countDown = 30, //µ¹¼ÆÊ±
- interId = null, //Ö¸¶¨ setInterval()µÄ±äÁ¿
- timeId = null; //Ö¸¶¨ setTimeout()µÄ±äÁ¿
- //ÓÎÏ·½áÊø
- function GameOver(){
- timeStop();
- playing = false;
- clearMouse();
- alert("ÓÎÏ·½áÊø£¡\n Äã»ñµÃµÄ·ÖÊıÎª£º"+score);
- score = 0;
- knock = 0;
- beat = 0;
- countDown = 30;
  }
- //ÏÔÊ¾µ±Ç°µ¹¼ÆÊ±ËùÊ£Ê±¼ä
- function timeShow(){
- document.form1.remtime.value = countDown;
- if(countDown == 0){
- GameOver();
- return;
- }else{
- countDown = countDown-1;
- timeId = setTimeout("timeShow()",1000);
- }
- }
- //Ö÷¶¯Í£Ö¹ËùÓĞ¼ÆÊ±
- function timeStop() {
- clearInterval(interId);
- clearTimeout(timeId); 
- }
- //Ëæ»úÑ­»·ÏÔÊ¾ÀÏÊóÍ¼Æ¬
- function show(){
- if(playing){
- var current = Math.floor(Math.random()*25);
- document.getElementById("td["+current+"]").innerHTML = '<img src="icon.jpg">';
- setTimeout("document.getElementById('td["+current+"]').innerHtml=''",3000); //Ê¹ÓÃ setTimeout()ÊµÏÖ3ÃëºóÒş²ØÀÏÊóÍ¼Æ¬
- }
- }
- //Çå³ıËùÓĞÀÏÊóÍ¼Æ¬
- function clearMouse(){
- for(var i=0;i<25;i++){
- document.getElementById("td["+i+"]").innerHTML="";
- }
- }
- //µã»÷ÊÂ¼şº¯Êı£¬ÅĞ¶ÏÊÇ·ñµãÖĞÀÏÊó
- function hit(id){
- if(playing == false){
- alert("Çëµã»÷¿ªÊ¼ÓÎÏ·!");
- return;
- }else{
- beat += 1;
- if(document.getElementById("td["+id+"]").innerHTML != ""){
- score += 1;
- knock += 1;
- document.form1.score.value = score;
- document.getElementById("td["+id+"]").innerHTML = "";
- }else{
- score += -1;
-  document.form1.score.value = score;
- }
- }
- }
- //ÓÎÏ·¿ªÊ¼
- function GameStart(){
- playing = true;
- interId = setInterval("show()",1000); 
- document.form1.score.value = score;
- timeShow();
->>>>>>> 7d58f1ec8598954e56a26a4e633d481a0e26e285:js/js_game1.js
- } 
