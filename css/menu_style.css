@@ -31,7 +31,7 @@ body{
 }
 .peppaFriend img:hover{
     cursor: pointer;
-    width: 27%;
+    width: 26%;
     left: -1%;
 }
 .georgeSus img{
@@ -42,7 +42,7 @@ body{
 }
 .georgeSus img:hover{
     cursor: pointer;
-    width: 17.2%;
+    width: 16.5%;
     left: -1%;
 }
 .peppa img{
@@ -64,7 +64,7 @@ body{
 }
 .mommy img:hover{
     cursor: pointer;
-    width: 28%;
+    width: 27.5%;
     left: +1%;
 }
 .daddy img{
@@ -75,6 +75,6 @@ body{
 }
 .daddy img:hover{
     cursor: pointer;
-    width: 22.5%;
+    width: 22.2%;
     left: -1%;
 }
