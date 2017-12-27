@@ -1,9 +1,107 @@
+.leftArea{float: left;}
+.rightArea{float: right;}
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;   /*必须*/
+}
 body{
-    background-image: url("../images/111.jpg");
-    background-repeat: no-repeat;
+    background: url("../images/111.jpg") no-repeat bottom;
     background-attachment:fixed;
+    background-color: #5aa459;
+}
+/*top*/
+.top{
+    height: 12%;
+    background-color:darkseagreen;
+    padding-right: 10%;
+}
+.top a{
+    text-decoration: none;
+    color: black;
+    float: right;
+    font-weight: bold;
+}
+.top a:hover{
+    color: green;
 }
 /*head*/
+.head{
+    height: 30%;
+}
+.logo{
+    width: 20%;
+}
 .logo img{
-    width: 10%;
+    padding: 5% 5%;
+    width: 70%;
+}
+.logo img:hover{
+    cursor: pointer;
+}
+/*nav*/
+.nav{
+    width: 80%;
+}
+.nav_sec{
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.nav_sec img{
+    border-radius:50%;
+    overflow:hidden;
+    border-color: darkseagreen;
+}
+.nav_sec img:hover{
+    width: 100%;
+}
+.nav_sec a{
+    text-decoration: none;
+}
+.nav_sec h4{
+    padding-left: 25%;
+    color: darkgreen;
+    font-weight: bold;
+}
+.content_name{
+     background-color: yellow;
+     width: 15%;
+     margin-left: 22%;
+     margin-top: 5%;
+     border-radius:10%;
+ }
+.mainPart{
+    width: 53%;
+    margin-left: 22%;
+    background-color: green;
+    height: 100%;
+    border-radius:5%;
+
+}
+.content_text{
+    position:absolute;
+    background-color: white;
+    width: 49%;
+    height: 70%;
+    margin: 3% 2%;
+}
+.footer{
+    width: 49%;
+    background-color: saddlebrown;
+    height: 20%;
+    margin-left: 2%;
+    position: absolute;
+    margin-top: 37.4%;
+}
+.footer img{
+    border-radius:50%;
+    width: 15%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.footer h3,p{
+    float: right;
+    margin-right: 22%;
+    margin-top: 1%;
 }
