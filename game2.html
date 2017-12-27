@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Bring a hat to crying peppa</title>
+	 <style type="text/css">
+ #content {
+ width:960px;
+ margin:0 auto;
+ text-align:center;
+ margin-top:40px;
+ }
+ #form1 {
+ margin:10px 20px;
+ }
+ #level0 {
+ position:absolute;
+ top:200px;
+ left:450px;
+ }
+ #level1 {
+ position:absolute;
+ top:200px;
+ left:450px;
+
+ }
+ #level2 {
+position:absolute;
+ top:200px;
+ left:450px;
+ }
+ table {
+ margin:0 auto;
+ cursor:url(images/timg.png),auto;
+ background-color:#FFFFFF;
+ }
+ td {
+ width:82px;
+ height:83px;
+ background-image:url(images/pig.png);
+ }
+ .footer{
+    position:absolute;
+    bottom:0;
+	top:800px;
+    left:450px;
+    text-align: center;
+    height: 9%;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+ </style>
+<script type="text/javascript" src="js/js_cookies.js">
+
+</script>
+    <script src="js/js_navi.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="x-icon" rel="shortcut icon" href="images/icon.png">
+</head>
+<body onLoad="checkCookie()">
+<div class="head">
+    <div class="top">
+        <a href="about.html">ABOUT</a><a href="contact.html">CONTACT|</a>
+    </div>
+    <div class="logo leftArea">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+    </div>
+    <div class="nav rightArea">
+        <div class="nav_sec leftArea">
+            <a href="gameMenu.html"><img src="images/game.jpg" border="3"></a>
+            <a href="gameMenu.html"><h4>GAME</h4></a>
+        </div>
+        <div class="nav_sec leftArea">
+            <a href="storyMenu.html"><img src="images/story.jpg" border="3"></a>
+            <a href="storyMenu.html"><h4>STORY</h4></a>
+        </div>
+        <div class="nav_sec leftArea">
+            <a href="videoMenu.html"><img src="images/video.jpg" border="3"></a>
+            <a href="videoMenu.html"><h4>VIDEO</h4></a>
+        </div>
+    </div>
+</div>
+<div class="content_name">
+    <h1>Bring a hat to crying peppa</h1>
+</div>
+<div class="mainPart">
+    <div class="content">
+        <div class="content_text">
+		 <form name="form1" id="form1">
+  <label>score:</label>
+  <input type="text" name="score" size="5">
+  <label>remtime:</label>
+  <input type="text" name="remtime" size="5">
+ </form>
+ <script>
+function show1(){
+document.getElementById("level0").style.display="block";
+document.getElementById("level1").style.display="none";
+document.getElementById("level2").style.display="none";
+};
+function show2()
+{
+document.getElementById("level0").style.display="none";
+document.getElementById("level1").style.display="block";
+document.getElementById("level2").style.display="none";
+}
+function show3()
+{
+document.getElementById("level0").style.display="none";
+document.getElementById("level1").style.display="none";
+document.getElementById("level2").style.display="block";
+}
+</script>
+<input type="button" value="level1" onClick="show1()">
+<input type="button" value="level2" onClick="show2()">
+<input type="button" value="level3" onClick="show3()">
+ <div style="display:none" id="level0">
+ <input type="button" value="Start" onClick="GameStart()" />
+ <input type="button" value="GameOver" onClick="GameOver()"  />
+ 
+ <script src="js/js_game3.js">
+ </script>
+ <table>
+  <tr>
+  <td id="td[0]" onClick="hit(0)"></td>  
+  <td id="td[1]" onClick="hit(1)"></td>
+  <td id="td[2]" onClick="hit(2)"></td>
+  <td id="td[3]" onClick="hit(3)"></td>
+  </tr>
+  <tr>
+  <td id="td[4]" onClick="hit(4)"></td>
+  <td id="td[5]" onClick="hit(5)"></td>
+  <td id="td[6]" onClick="hit(6)"></td>
+  <td id="td[7]" onClick="hit(7)"></td> 
+  </tr>
+  <tr>
+  <td id="td[8]" onClick="hit(8)"></td>
+  <td id="td[9]" onClick="hit(9)"></td>
+  <td id="td[10]" onClick="hit(10)"></td>
+  <td id="td[11]" onClick="hit(11)"></td> 
+  </tr>
+  <tr>
+  <td id="td[12]" onClick="hit(12)"></td>
+  <td id="td[13]" onClick="hit(13)"></td>
+  <td id="td[14]" onClick="hit(14)"></td>
+  <td id="td[15]" onClick="hit(15)"></td> 
+  </tr>
+ </table>
+ </div>
+<div id="level1">
+<input type="button" value="Start" onClick="GameStart()" />
+ <input type="button" value="GameOver" onClick="GameOver()"  />
+ 
+ <script style="display:none" src="js/js_game2.js">
+ </script>
+ <table>
+  <tr>
+  <td id="td[0]" onClick="hit(0)"></td>  
+  <td id="td[1]" onClick="hit(1)"></td>
+  <td id="td[2]" onClick="hit(2)"></td>
+  <td id="td[3]" onClick="hit(3)"></td>
+  <td id="td[4]" onClick="hit(4)"></td>
+  </tr>
+  <tr>
+  <td id="td[5]" onClick="hit(5)"></td>
+  <td id="td[6]" onClick="hit(6)"></td>
+  <td id="td[7]" onClick="hit(7)"></td>
+  <td id="td[8]" onClick="hit(8)"></td>
+  <td id="td[9]" onClick="hit(9)"></td> 
+  </tr>
+  <tr>
+  <td id="td[10]" onClick="hit(10)"></td>
+  <td id="td[11]" onClick="hit(11)"></td>
+  <td id="td[12]" onClick="hit(12)"></td>
+  <td id="td[13]" onClick="hit(13)"></td>
+  <td id="td[14]" onClick="hit(14)"></td>
+  </tr>
+  <tr>
+  <td id="td[15]" onClick="hit(15)"></td>
+  <td id="td[16]" onClick="hit(16)"></td>
+  <td id="td[17]" onClick="hit(17)"></td>
+  <td id="td[18]" onClick="hit(18)"></td>
+  <td id="td[19]" onClick="hit(19)"></td>
+  </tr>
+  <tr>
+  <td id="td[20]" onClick="hit(20)"></td>
+  <td id="td[21]" onClick="hit(21)"></td>
+  <td id="td[22]" onClick="hit(22)"></td>
+  <td id="td[23]" onClick="hit(23)"></td>
+  <td id="td[24]" onClick="hit(24)"></td>
+  </tr>
+ </table>
+ </div> 
+<div style="display:none" id="level2">
+<input type="button" value="Start" onClick="GameStart()" />
+ <input type="button" value="GameOver" onClick="GameOver()"  />
+ 
+ <script src="js/js_game1.js">
+ </script>
+ <table>
+  <tr>
+  <td id="td[0]" onClick="hit(0)"></td>  
+  <td id="td[1]" onClick="hit(1)"></td>
+  <td id="td[2]" onClick="hit(2)"></td>
+  <td id="td[3]" onClick="hit(3)"></td>
+  <td id="td[4]" onClick="hit(4)"></td>
+  <td id="td[5]" onClick="hit(5)"></td>
+  </tr>
+  <tr>
+  <td id="td[6]" onClick="hit(6)"></td>
+  <td id="td[7]" onClick="hit(7)"></td>
+  <td id="td[8]" onClick="hit(8)"></td>
+  <td id="td[9]" onClick="hit(9)"></td>
+  <td id="td[10]" onClick="hit(10)"></td>
+  <td id="td[11]" onClick="hit(11)"></td>
+  </tr>
+  <tr>
+  <td id="td[12]" onClick="hit(12)"></td>
+  <td id="td[13]" onClick="hit(13)"></td>
+  <td id="td[14]" onClick="hit(14)"></td>
+  <td id="td[15]" onClick="hit(15)"></td>
+  <td id="td[16]" onClick="hit(16)"></td>
+  <td id="td[17]" onClick="hit(17)"></td>
+  </tr>
+  <tr>
+  <td id="td[18]" onClick="hit(18)"></td>
+  <td id="td[19]" onClick="hit(19)"></td>
+  <td id="td[20]" onClick="hit(20)"></td>
+  <td id="td[21]" onClick="hit(21)"></td>
+  <td id="td[22]" onClick="hit(22)"></td>
+  <td id="td[23]" onClick="hit(23)"></td>
+  </tr>
+  <tr>
+  <td id="td[24]" onClick="hit(24)"></td>
+  <td id="td[25]" onClick="hit(25)"></td> 
+  <td id="td[26]" onClick="hit(26)"></td>
+  <td id="td[27]" onClick="hit(27)"></td>
+  <td id="td[28]" onClick="hit(28)"></td>
+  <td id="td[29]" onClick="hit(29)"></td>
+  </tr>
+   <tr>
+  <td id="td[30]" onClick="hit(24)"></td>
+  <td id="td[31]" onClick="hit(25)"></td> 
+  <td id="td[32]" onClick="hit(26)"></td>
+  <td id="td[33]" onClick="hit(27)"></td>
+  <td id="td[34]" onClick="hit(28)"></td>
+  <td id="td[35]" onClick="hit(29)"></td>
+  </tr>
+ </table>
+</div>
+ </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="images/photo.jpg" alt="selfie">
+        <h3>created by team PeppaPig</h3>
+        <p>member1:Ming Zhou</p>
+        <P>member2:QianYun Jiang</P>
+    </div>
+</div>
+
+</body>
+</html>
