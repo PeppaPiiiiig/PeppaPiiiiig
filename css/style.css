@@ -68,31 +68,6 @@ body{
     padding-bottom: 9%;
 }
 
-/*food*/
-.mainPart_food{
-    width:70%;
-    margin-left: 18%;
-    height: auto;
-    background-color: rgba(255,0,0,0.5);
-}
-.foodTitle{
-    background-color: indianred;
-    height: 20%;
-    font-size: larger;
-    position: relative;
-}
-.foodTitle h1{
-    position:absolute;
-    bottom:0;
-    padding-left: 25%;
-}
-.content_table table{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    width: 90%;
-    margin: auto;
-    color: black;
-}
 
 /*log in*/
 .mainPart_login{
@@ -208,4 +183,81 @@ body{
 }
 .J{
     padding-right: 21%;
+}
+
+/*food*/
+.mainPart_food{
+    width:70%;
+    margin-left: 18%;
+    height: auto;
+    background-color: rgba(255,0,0,0.5);
+}
+.foodTitle{
+    background-color: indianred;
+    height: 20%;
+    font-size: larger;
+    position: relative;
+}
+.foodTitle h1{
+    position:absolute;
+    bottom:0;
+    padding-left: 25%;
+}
+.content_table table{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 90%;
+    margin: auto;
+    color: black;
+}
+
+/*history*/
+.mainPart_history{
+    width:70%;
+    margin-left: 18%;
+    height: auto;
+}
+.historyTitle{
+    background-color: indianred;
+    height: 20%;
+    font-size: larger;
+    position: relative;
+}
+.historyTitle h1{
+    position:absolute;
+    bottom:0;
+    padding-left: 25%;
+}
+video{
+    width: 100%;
+}
+
+/*activity*/
+.mainPart_activity{
+    width:70%;
+    margin-left: 18%;
+    height: auto;
+    background-color: rgba(255,0,0,0.5);
+}
+.activityTitle{
+    background-color: indianred;
+    height: 20%;
+    font-size: larger;
+    position: relative;
+}
+.activityTitle h1{
+    position:absolute;
+    bottom:0;
+    padding-left: 25%;
+}
+.content_activity p{
+    width: 80%;
+    padding: 5% 10%;
+
+    font-size: large;
+    color: white;
+}
+.content_activity img{
+    width:100%;
+
 }
