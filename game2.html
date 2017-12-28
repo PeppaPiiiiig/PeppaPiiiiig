@@ -15,19 +15,19 @@
  }
  #level0 {
  position:absolute;
- top:200px;
- left:450px;
+ top:0%;
+ left:10%;
  }
  #level1 {
  position:absolute;
- top:200px;
- left:450px;
+top:0%;
+ left:10%;
 
  }
  #level2 {
 position:absolute;
- top:200px;
- left:450px;
+top:0%;
+ left:10%;
  }
  table {
  margin:0 auto;
@@ -77,8 +77,8 @@ position:absolute;
             <a href="gameMenu.html"><h4>GAME</h4></a>
         </div>
         <div class="nav_sec leftArea">
-            <a href="storyMenu.html"><img src="images/story.jpg" border="3"></a>
-            <a href="storyMenu.html"><h4>STORY</h4></a>
+            <a href="food.html"><img src="images/food.jpg" border="3"></a>
+            <a href="food.html"><h4>FOOD</h4></a>
         </div>
         <div class="nav_sec leftArea">
             <a href="videoMenu.html"><img src="images/video.jpg" border="3"></a>
@@ -88,16 +88,16 @@ position:absolute;
 </div>
 <div class="content_name">
     <h1>Bring a hat to crying peppa</h1>
-</div>
-<div class="mainPart">
-    <div class="content">
-        <div class="content_text">
-		 <form name="form1" id="form1">
+  <form name="form1" id="form1">
   <label>score:</label>
   <input type="text" name="score" size="5">
   <label>remtime:</label>
   <input type="text" name="remtime" size="5">
- </form>
+  </form>
+</div>
+<div class="mainPart">
+    <div class="content">
+        <div class="content_t">
  <script>
 function show1(){
 document.getElementById("level0").style.display="block";
@@ -117,13 +117,12 @@ document.getElementById("level1").style.display="none";
 document.getElementById("level2").style.display="block";
 }
 </script>
-<input type="button" value="level1" onClick="show1()">
-<input type="button" value="level2" onClick="show2()">
-<input type="button" value="level3" onClick="show3()">
+<input type="button" value="level1" onClick="show1()"><br><br>
+<input type="button" value="level2" onClick="show2()"><br><br>
+<input type="button" value="level3" onClick="show3()"><br><br>
  <div style="display:none" id="level0">
  <input type="button" value="Start" onClick="GameStart()" />
  <input type="button" value="GameOver" onClick="GameOver()"  />
- 
  <script src="js/js_game3.js">
  </script>
  <table>
@@ -257,7 +256,7 @@ document.getElementById("level2").style.display="block";
  </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer1">
         <img src="images/photo.jpg" alt="selfie">
         <h3>created by team PeppaPig</h3>
         <p>member1:Ming Zhou</p>
